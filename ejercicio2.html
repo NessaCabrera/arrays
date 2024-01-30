@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let inicio=["una cadena",3,9,1,10,500,1,10,true];
+        let numero=9;
+        let aux;
+        for(let i=0; i<numero; i++)
+        {
+            for(let j=0; j<numero; j++ )
+            {
+                if(inicio[i]<inicio[j])
+                {
+                    aux=inicio[i];
+                    inicio[i]=inicio[j];
+                    inicio[j]=aux;
+                }
+            }
+        }
+        console.log(inicio);
+    </script>
+</body>
+</html>

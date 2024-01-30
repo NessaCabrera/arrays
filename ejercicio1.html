@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numeroDeElementos=prompt("Ingrese un numero");
+        let fibo1=0;
+        let fibo2=1;
+        let aux=0;
+
+        if (numeroDeElementos==1){
+            console.log(fibo1);
+        }else{
+           
+            console.log(fibo1);
+            console.log(fibo2);
+            for (let i=-1; i<numeroDeElementos-3; i++){
+                aux=fibo2;
+                fibo2=fibo1+fibo2;
+                fibo1=aux;
+                console.log(fibo2);
+            }
+        }
+        
+    </script>
+</body>
+</html>
